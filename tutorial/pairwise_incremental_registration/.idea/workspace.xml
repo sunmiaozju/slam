@@ -11,9 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f615561-1944-435f-a9b3-574bc303a890" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pairwise_incremental_registration.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/pairwise_incremental_registration.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="5f615561-1944-435f-a9b3-574bc303a890" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +85,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="47" />
     <option name="y" value="-4" />
     <option name="width" value="1922" />
@@ -157,16 +155,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544011249495</updated>
-      <workItem from="1544011250673" duration="2411000" />
+      <workItem from="1544011250673" duration="2412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2411000" />
+    <option name="totallyTimeSpent" value="2412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1922" height="1085" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19542067" />
