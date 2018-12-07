@@ -145,8 +145,9 @@ void loadData (int argc, char **argv, std::vector<PCD, Eigen::aligned_allocator<
       //remove NAN points from the cloud
       std::vector<int> indices;
       pcl::removeNaNFromPointCloud(*m.cloud,*m.cloud, indices);
-
+      //一个浅拷贝从m到PCD[0]
       models.push_back (m);
+
     }
   }
 }
@@ -182,7 +183,6 @@ void pairAlign (const PointCloud::Ptr cloud_src, const PointCloud::Ptr cloud_tgt
     tgt = cloud_tgt;
   }
 
-
   // Compute surface normals and curvature
   PointCloudWithNormals::Ptr points_with_normals_src (new PointCloudWithNormals);
   PointCloudWithNormals::Ptr points_with_normals_tgt (new PointCloudWithNormals);
@@ -190,6 +190,7 @@ void pairAlign (const PointCloud::Ptr cloud_src, const PointCloud::Ptr cloud_tgt
   pcl::NormalEstimation<PointT, PointNormalT> norm_est;
   pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ> ());
   norm_est.setSearchMethod (tree);
+  //Set the number of k nearest neighbors to use for the feature estimation.
   norm_est.setKSearch (30);
   
   norm_est.setInputCloud (src);
@@ -210,6 +211,7 @@ void pairAlign (const PointCloud::Ptr cloud_src, const PointCloud::Ptr cloud_tgt
   //
   // Align
   pcl::IterativeClosestPointNonLinear<PointNormalT, PointNormalT> reg;
+  //设置最小迭代阈值
   reg.setTransformationEpsilon (1e-6);
   // Set the maximum distance between two correspondences (src<->tgt) to 10cm
   // Note: adjust this based on the size of your datasets
@@ -303,7 +305,7 @@ int main (int argc, char** argv)
   p->createViewPort (0.0, 0, 0.5, 1.0, vp_1);
   p->createViewPort (0.5, 0, 1.0, 1.0, vp_2);
 
-	PointCloud::Ptr result (new PointCloud), source, target;
+  PointCloud::Ptr result (new PointCloud), source, target, output(new PointCloud);
   Eigen::Matrix4f GlobalTransform = Eigen::Matrix4f::Identity (), pairTransform;
   
   for (size_t i = 1; i < data.size (); ++i)
@@ -316,11 +318,12 @@ int main (int argc, char** argv)
 
     PointCloud::Ptr temp (new PointCloud);
     PCL_INFO ("Aligning %s (%d) with %s (%d).\n", data[i-1].f_name.c_str (), source->points.size (), data[i].f_name.c_str (), target->points.size ());
+    //        第0帧      第1帧 第0帧合成结果 第1帧到第0帧的转换矩阵
     pairAlign (source, target, temp, pairTransform, true);
 
     //transform current pair into the global transform
     pcl::transformPointCloud (*temp, *result, GlobalTransform);
-
+    *output = *output + *result;
     //update the global transform
     GlobalTransform = GlobalTransform * pairTransform;
 
@@ -328,7 +331,8 @@ int main (int argc, char** argv)
     std::stringstream ss;
     ss << i << ".pcd";
     pcl::io::savePCDFile (ss.str (), *result, true);
-
   }
+    pcl::io::savePCDFile ("final.pcd", *output, true);
+
 }
 /* ]--- */
