@@ -19,7 +19,10 @@
 
 4. pcl::PointCloud::is_dense> (bool)
 
+    用来说明点云中是否包含无效值
+
     true：点云中的点xyz数值都是有限的
+
     false:点云中的某个点的xyz包含Inf/NaN值
 5. pcl::PointT 这个是一个集合，包含了很多点类型
 
@@ -27,7 +30,7 @@
     + pcl::PointXYZ
       这是最简单的点的类型，存储着点的x,y,z信息
     + pcl::PointXYZI
-      这个类型的点和前面那个很相似，但是它包含了一个维度描述点的intensity,代表单通道图像中的灰度强度，类似于亮度。
+      这个类型的点和前面那个很相似，但是它包含了一个维度描述点的intensity,代表单通道图像中的灰度强度,类似于亮度。
     + pcl::InterestPoint
       与前面类似，多一个维度去存储点的返回强度，侧重于品质.
 

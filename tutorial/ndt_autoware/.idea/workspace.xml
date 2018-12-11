@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1e07549-0c60-4bab-8c80-f173d5d93478" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ndt_autoware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ndt_autoware.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ndt_slam.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ndt_slam.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ndt_autoware.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ndt_autoware.cpp" afterDir="false" />
     </list>
@@ -26,8 +25,9 @@
     <session id="-744497215">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,32 +44,37 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="4" />
+          <entry key="cpp" value="1110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="4" />
+          <entry key="ObjectiveC" value="1110" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ndt_autoware.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="939" column="17" lean-forward="true" selection-start-line="939" selection-start-column="17" selection-end-line="939" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ndt_mapping.launch">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="57" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="57" />
+            <state relative-caret-position="358">
+              <caret line="859" column="27" lean-forward="true" selection-start-line="859" selection-start-column="27" selection-end-line="859" selection-end-column="27" />
+              <folding>
+                <element signature="e#975#1083#1" />
+                <element signature="e#1086#1190#1" />
+                <element signature="e#4305#5282#0" />
+                <element signature="e#5284#7136#0" />
+                <element signature="e#7138#8587#0" />
+                <element signature="e#9953#12199#0" />
+                <element signature="e#12201#12341#0" />
+                <element signature="e#12343#12431#0" />
+                <element signature="e#12433#12711#0" />
+                <element signature="e#12713#12884#0" />
+                <element signature="e#12886#13586#0" />
+                <element signature="e#13588#15410#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,7 +83,33 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>map</find>
+      <find>is_first_map</find>
+      <find>t3_start</find>
+      <find>has_converged</find>
+      <find>setInputTarget</find>
+      <find>tf_ltob</find>
+      <find>tf_btol</find>
+      <find>transformed_scan_ptr</find>
+      <find>current_scan_time</find>
+      <find>calcDiffForRadian</find>
+      <find>offset_imu_x</find>
+      <find>added_pose</find>
+      <find>_incremental_voxel_update</find>
+      <find>current_pose_msg</find>
+      <find>br</find>
+      <find>localizer_pose</find>
+      <find>_imu_upside_down</find>
+      <find>imu</find>
+      <find>imu_roll</find>
+      <find>previous_time</find>
+      <find>current_pose_imu</find>
+      <find>imu.angular_velocity</find>
+      <find>guess_pose_imu</find>
       <find>previous_pose</find>
+      <find>accX1</find>
+      <find>current_velocity_imu_x</find>
+      <find>odom</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,6 +128,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="47" />
     <option name="y" value="-4" />
@@ -125,9 +157,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,25 +184,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544167311899</updated>
-      <workItem from="1544167313084" duration="6354000" />
+      <workItem from="1544167313084" duration="25794000" />
+      <workItem from="1544315875456" duration="9800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6354000" />
+    <option name="totallyTimeSpent" value="35594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11448349" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14110756" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="CMake" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -177,10 +205,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="CMake" order="11" visible="true" weight="0.18002081" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,15 +225,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ndt_mapping.launch">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="57" />
+        <state relative-caret-position="342">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ndt_autoware.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="939" column="17" lean-forward="true" selection-start-line="939" selection-start-column="17" selection-end-line="939" selection-end-column="28" />
+        <state relative-caret-position="358">
+          <caret line="859" column="27" lean-forward="true" selection-start-line="859" selection-start-column="27" selection-end-line="859" selection-end-column="27" />
+          <folding>
+            <element signature="e#975#1083#1" />
+            <element signature="e#1086#1190#1" />
+            <element signature="e#4305#5282#0" />
+            <element signature="e#5284#7136#0" />
+            <element signature="e#7138#8587#0" />
+            <element signature="e#9953#12199#0" />
+            <element signature="e#12201#12341#0" />
+            <element signature="e#12343#12431#0" />
+            <element signature="e#12433#12711#0" />
+            <element signature="e#12713#12884#0" />
+            <element signature="e#12886#13586#0" />
+            <element signature="e#13588#15410#0" />
+          </folding>
         </state>
       </provider>
     </entry>
